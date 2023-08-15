@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alinhamento de Círculos</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle yellow"></div>
+      <div class="circle blue"></div>
+    </div>
+    <style>
+      body,
+      html {
+        margin: 0;
+        height: 100%;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 20px;
+      }
+
+      .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      .yellow {
+        background-color: orange;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+    </style>
+  </body>
+</html>

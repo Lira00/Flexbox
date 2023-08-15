@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alinhamento de Elementos</title>
+  </head>
+  <body>
+    <main>
+      <div id="círculo"></div>
+      <div class="quadrado-container">
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+      </div>
+    </main>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0;
+      }
+      main {
+        display: flex; /* para conseguir deixar dinâmico*/
+        flex-direction: column; /*para alinhar os itens em forma de coluna*/
+        align-items: flex-end; /*para alinhar o circulo no final da linha*/
+        justify-content: space-between; /*para separar o círculo dos quadrados*/
+        height: 100vh; /*para ajustar a altura entre os elementos */
+      }
+      .quadrado {
+        border: 1 px solid;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+
+      #círculo {
+        border: 1 px solid;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: yellow;
+      }
+      .quadrado-container {
+        display: flex; /*para permitir alterar a distancia dos quadrados*/
+        justify-content: space-between; /*para alterar a distancia entre os quadrados*/
+        width: 100%; /* para ocupar 100% do espaço do container*/
+      }
+      div.quadrado,
+      div#círculo {
+        border: 1px solid;
+      }
+    </style>
+  </body>
+</html>
